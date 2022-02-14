@@ -1,0 +1,326 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+
+/* Font sizes and theme colors (variable type)*/
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --emerald: rgba(74, 201, 89, 1);
+  --mountain-mist: rgba(151, 151, 151, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 24px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 60px;
+
+  --font-family-muli-bold: "Muli-Bold";
+  --font-family-muli-regular: "Muli-Regular";
+  --font-family-poppins: "Poppins";
+}
+
+/* Sweet Alert */
+
+.colored-toast.swal2-icon-success {
+  background-color: var(--emerald) !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+  background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+  background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+  background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  p {
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 64px;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 44px;
+  }
+
+  h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  p {
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+  }
+}
+/*
+ * Custom translucent site header with horizontal green line
+ */
+.stroke {
+  height: 24px;
+  background-color: #4ac959;
+  display: block;
+}
+
+.pop-over {
+  z-index: 100;
+  position: relative;
+  float: left;
+}
+
+.navbar {
+  background-color: transparent;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 200;
+}
+
+.img-btn {
+  cursor: pointer;
+}
+
+.img-btn:hover, .img-btn:focus  {
+  transition: transform 1s;
+  transform: translateX(0) scale(1.3);
+}
+
+.btn {
+  color: white;
+  border-radius: 0px;
+}
+
+.btn-black-round {
+  color: white;
+  border-radius: 5px;
+  background-color: var(--black);
+}
+
+.btn-green-round {
+  color: white;
+  border-radius: 2px;
+  background-color: var(--emerald);
+  font-weight: 600 !important;
+  font-family: var(--font-family-poppins) !important;
+}
+
+.btn-green {
+  background-color: var(--emerald);
+}
+
+.btn-black {
+  background-color: var(--black);
+}
+
+.btn-btn-close {
+  color: var(--black);
+  font-weight: 600 !important;
+  font-family: var(--font-family-poppins) !important;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.input-todo {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.input-todo:hover,
+.input-todo:focus {
+  background-color: #d3d3d38a;
+}
+
+.span-max {
+  line-height:26px;
+  max-width: 180px;
+}
+
+.site-header a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.back-logo {
+  height: 100%;
+  background-image: url(./img/back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*
+ * Title and subtitle
+ */
+.titulo {
+  top: 26vh;
+  position: relative;
+  text-align: left;
+  /* or 80% */
+  color: var(--black);
+}
+
+.sub-titulo {
+  top: 26vh;
+  text-align: left;
+  position: relative;
+  color: var(--emerald);
+}
+
+.p-inicio {
+  top: 26vh;
+  position: relative;
+  color: var(--mountain-mist);
+}
+
+.p-contact {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.strong {
+  top: 26vh;
+  text-align: left;
+  position: relative;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+  color: #000000;
+}
+
+.titulo-login {
+  text-align: left;
+  line-height: 1;
+  /* or 80% */
+  color: var(--black);
+  font-size: var(--font-size-xxl);
+}
+
+.sub-titulo-login {
+  line-height: 1;
+  text-align: left;
+  color: var(--emerald);
+  font-size: var(--font-size-xl);
+}
+
+.underline-green {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--emerald);
+}
+
+.pricing {
+  text-align: center;
+  font-family: Poppins;
+}
+
+.pricing-stroke-green {
+  height: 20px;
+  background-color: var(--emerald)
+}
+
+.pricing-stroke-orange {
+  height: 20px;
+  background-color: #E88D39
+}
+
+.lines {
+  text-align: left;
+}
+
+.contact-form {
+  max-width: 100vh;
+}

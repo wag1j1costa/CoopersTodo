@@ -1,0 +1,38 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+/* Font sizes and theme colors (variable type)*/
+:root {
+  --black: 
+rgba(0, 0, 0, 1);
+  --emerald: 
+rgba(74, 201, 89, 1);
+  --mountain-mist: 
+rgba(151, 151, 151, 1);
+  --white: 
+rgba(255, 255, 255, 1);
+
+}
+
+.todoHead{
+  background-image: url(./img/BG.png);
+  top: -30px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:cover;
+  z-index: -50;
+}
+
+.titleTodo{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--emerald);
+}
+
+.rectangle{
+  background-color: var(--emerald);
+  height: 41px;
+  z-index: 50;
+  width: 500px;
+}
