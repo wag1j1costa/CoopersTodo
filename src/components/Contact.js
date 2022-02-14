@@ -2,8 +2,17 @@ import React from 'react';
 import '../Home.css'
 import tatiana from '../img/tatiana.png'
 import iconmail from '../img/icon-mail.png'
+import Swal from 'sweetalert2'
 
 const Contact = () => {
+    
+
+    const sendForm = () => {
+        Swal.fire(
+            'Success', 'Message sent successfully!', 'success'
+        )
+    }
+
     return ( 
         <div className="contact-form container">
             <div className="shadow container">
@@ -13,7 +22,7 @@ const Contact = () => {
                 <div>
                     <form>
                         <div className="row">
-                            <div className="col-1 my-2 me-1">
+                            <div className="col-1 my-3 me-1">
                                 <img src={iconmail} alt=""/>
                             </div>
                             <div className="col-10 ms-4 mt-4">
@@ -38,8 +47,8 @@ const Contact = () => {
                                 <label htmlFor="exampleFormControlInput1" className="form-label">Message*</label>
                                 <textarea className="form-control" id="yourMessage" placeholder="Type what you want to say to us" rows="5" required/>
                             </div>
-                            <div className="d-grid gap-2">
-                                <button className="btn btn-green-round" type="submit">SEND NOW</button>
+                            <div className="d-grid gap-2 mb-3">
+                                <button className="btn btn-green-round" type="submit" onClick={sendForm} >SEND NOW</button>
                             </div>
                         </div>
                     </form>
